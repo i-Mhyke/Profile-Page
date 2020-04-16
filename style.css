@@ -328,7 +328,7 @@ input[type=submit]{
 }
 @media (max-width: 320px){
   .flex-center {
-  min-height: 10em;
+  min-height: 5em;
   width: 100%;
 }
 }
