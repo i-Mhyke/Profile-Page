@@ -18,7 +18,7 @@ h1, h2, h3, h4, h5, h6{
 .header {
   background-image: linear-gradient(to bottom, rgba(50, 50, 50, 0.92), rgba(0, 0, 0, 0.88)),
    url("https://res.cloudinary.com/ihunaya/image/upload/v1587054954/Startng/html-css/bg-1_kvzn2c.jpg");
-  height: 90%; 
+  height: 80%; 
   width: 100%
   background-position: center;
   background-repeat: no-repeat;
@@ -49,7 +49,7 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-min-height: 30em;
+min-height: 25em;
 width: 100%;
 }
 .flex-center h3{
