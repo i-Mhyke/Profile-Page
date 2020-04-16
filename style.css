@@ -267,6 +267,11 @@ input[type=submit]:focus{
     margin-right: 0px;
     padding: 20px;
     }
+    .flex-center{
+      display: block;
+      text-align: center;
+      width: 100%;
+  }
     .my-image{
       display: block;
       margin-right: auto;
@@ -289,10 +294,11 @@ input[type=submit]:focus{
     }
     .nav-brand{
       text-align: center;
+      margin-bottom: 10px
     }
     .section-header{
     margin-bottom: 25px;
-}
+    }
 }
 @media (max-width: 575px){
   .header{
@@ -301,10 +307,6 @@ input[type=submit]:focus{
   .my-image{
     width: 100%;
   }
-  .flex-center {
-  min-height: 15em;
-  width: 100%;
-}
 .flex-center h3{
   font-weight: bold;
   font-size: 15px
@@ -321,12 +323,6 @@ input[type=submit]{
   .header{
     height: 50%;
   }
-  .flex-center {
-  min-height: 20em;
-  width: 100%;
-}
-}
-@media (max-width: 360px){
   .flex-center {
   min-height: 5em;
   width: 100%;
