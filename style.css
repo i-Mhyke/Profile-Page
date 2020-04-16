@@ -1,0 +1,269 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+
+ }
+.body-container{
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+h1, h2, h3, h4, h5, h6{
+	margin-top: 0;
+	margin-bottom: 0.5rem;
+}
+.header {
+  background-image: linear-gradient(to bottom, rgba(50, 50, 50, 0.92), rgba(0, 0, 0, 0.88)),
+   url("https://res.cloudinary.com/ihunaya/image/upload/v1587054954/Startng/html-css/bg-1_kvzn2c.jpg");
+  height: 100%; 
+  width: 100%
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+.navbar {
+  overflow: hidden;
+  padding: 20px;
+  justify-content: space-between;
+}
+.nav-brand a{
+  color: #ff9122;
+  font-weight: bolder;
+}
+.nav-brand a span{
+  font-size: 25px
+}
+.nav-items a{
+  color: #fffaf4;
+  font-weight: bolder;
+}
+.nav-items a:hover{
+  color: #ff9122;
+}
+.flex-center {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+min-height: 30em;
+width: 100%;
+}
+.flex-center h3{
+  font-weight: bold;
+  font-size: 30px
+}
+.flex-center h1{
+  font-weight: bolder;
+  font-size: 40px
+}
+.navbar a {
+  padding: 15px 15px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.bg-btn{
+  width: 150px;
+  padding: 20px 20px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid #ff9122;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px
+}
+.bg-btn:hover{
+  background-color: #ff9122;
+}
+.bg-btn:focus{
+  outline: 0;
+}
+.bg-content{
+  text-align: center;
+  padding-top: 10px;
+}
+.row{
+	display: flex;
+  flex-direction: row;
+}
+.side{
+	  flex: 30%;
+  	max-width: 30%;
+	  padding-right: 15px;
+	  padding-left: 15px;
+}
+.main{
+	  flex: 70%;
+  	max-width: 70%;
+ 	  padding-right: 15px;
+  	padding-left: 15px;
+}
+.card{
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+	background-color: #ffffff;
+  word-wrap: break-word;
+	border: 1px solid rgba(0, 0, 0, 0.125);
+	border-radius: 5px;
+	padding: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 30px
+}
+.section{
+  padding-top: 50px;
+  margin-top: 50px;
+}
+.section-header{
+  text-align: center;
+  margin-bottom: 50px;
+}
+.section-header h2{
+    border-bottom: 4px solid #ff9122;
+    border-top: 4px solid #000;
+    display: inline-block;
+    font-size: 36px;
+    margin-bottom: 15px;
+    margin-top: 0;
+    padding: 5px 0;
+}
+.my-image{
+    border: 10px solid #eeeeee;
+    margin-top: 18px;
+    border-radius: 50%;
+    text-align: center;
+}
+.bio h2{
+  color: #ff9122;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px
+}
+.bio-title{
+  font-weight: normal;
+}
+.bio-content{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.bio-content h4{
+  padding-bottom: 5px;
+}
+.con{
+  width: 60%;
+}
+hr{
+  margin-top: 30px;
+  margin-bottom: 30px
+}
+input{
+  width: 100%;
+    padding: 15px 22px;
+    margin: 10px 5px;
+    box-sizing: border-box;
+    border:none;
+    border-radius: 5px;
+    background-color: #edf2f7;
+}
+input:focus{
+  outline: none;
+}
+textarea{
+    width: 100%;
+    padding: 15px 22px;
+    margin: 10px 5px;
+    box-sizing: border-box;
+    border:none;
+    border-radius: 5px;
+    background-color: #edf2f7;
+}
+textarea:focus{
+  outline: none;
+}
+input[type=submit]{
+  width: 200px;
+  padding: 20px 20px;
+  background-color: transparent;
+  color: #ff9122;
+  border: 2px solid #ff9122;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px
+}
+input[type=submit]:hover{
+  background-color: #ff9122;
+  color: white;
+}
+input[type=submit]:focus{
+  outline: 0;
+}
+.footer hr{
+  margin-top: 100px;
+  margin-bottom: 0px;
+  font-weight: bolder;
+}
+.copy a{
+  color: #ff9122;
+  font-size: 12px
+  margin-left: 0px;
+}
+.my-story{
+  line-height: 2em;
+  color: #494949;
+  font-size: 20px;
+}
+@media(min-width: 320px){
+  .body-container{
+    max-width: 290px
+  }
+}
+@media (min-width: 576px) {
+  .body-container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .body-container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .body-container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .body-container {
+    max-width: 1140px;
+  }
+}
+@media (max-width: 767px){
+  .row{
+    flex-direction: column;
+  }
+  .side{
+    flex: 100%;
+    max-width: 100%;
+}
+.main{
+    flex: 100%;
+    max-width: 100%;
+}
+  .card{
+    width: 100%; 
+    display: block;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 20px;
+    };
+}
