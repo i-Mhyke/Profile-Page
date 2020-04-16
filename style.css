@@ -136,7 +136,7 @@ width: 100%;
     border: 10px solid #eeeeee;
     margin-top: 18px;
     border-radius: 50%;
-    text-align: center;
+    width: 100%;
 }
 .bio h2{
   color: #ff9122;
@@ -247,17 +247,17 @@ input[type=submit]:focus{
     max-width: 1140px;
   }
 }
-@media (max-width: 767px){
+@media (max-width: 768px){
+  .body-container{
+    padding: 0px;
+  }
   .row{
     flex-direction: column;
   }
-  .side{
-    flex: 100%;
-    max-width: 100%;
-}
-.main{
-    flex: 100%;
-    max-width: 100%;
+  .side, .main, .con{
+    flex: 90%;
+    max-width: 90%;
+    padding: 0px
 }
   .card{
     width: 100%; 
@@ -265,5 +265,56 @@ input[type=submit]:focus{
     margin-left: 0px;
     margin-right: 0px;
     padding: 20px;
-    };
+    }
+    .my-image{
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: 0px;
+      margin-bottom: 20px;
+      width: 50%;
+    }
+    .copy{
+      text-align: center;
+    }
+    .nav-items{
+      display: none;
+    }
+    .nav-brand{
+      text-align: center;
+    }
+    .section-header{
+    margin-bottom: 25px;
+}
+}
+@media (max-width: 575px){
+  .header{
+    height: 50%;
+  }
+  .my-image{
+    width: 100%;
+  }
+  .flex-center {
+  min-height: 15em;
+  width: 100%;
+}
+.flex-center h3{
+  font-weight: bold;
+  font-size: 15px
+}
+.flex-center h1{
+  font-weight: bolder;
+  font-size: 20px
+}
+input[type=submit]{
+  width: 100%;
+}
+}
+@media (max-width: 1024px){
+  .header{
+    height: 50%;
+  }
+  .flex-center {
+  min-height: 20em;
+  width: 100%;
 }
