@@ -4,6 +4,7 @@ body, html {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #0f1113;
   color: #e2e3df;
+  font-family: 'Montserrat', sans-serif;
 
  }
 .body-container{
@@ -35,14 +36,20 @@ h1, h2, h3, h4, h5, h6{
 }
 .nav-brand a{
   color: #ff9122;
-  font-weight: bolder;
 }
 .nav-brand a span{
-  font-size: 25px
+  font-size: 45px;
+  font-family: 'Great Vibes', cursive;
+}
+.nav-items{
+  padding-top: 20px;
 }
 .nav-items a{
   color: #fffaf4;
   font-weight: bolder;
+}
+.nav-items a span{
+  font-size: 18px;
 }
 .nav-items a:hover{
   color: #ff9122;
@@ -141,7 +148,8 @@ width: 100%;
 }
 .name-tag{
     margin-bottom: 100px;
-    margin-top: 50px
+    margin-top: 50px;
+    font-family: 'Comic Neue', cursive;
 }
 .my-image{
     border: 2px solid #ff9122;
@@ -385,6 +393,7 @@ input[type=submit]:focus{
     display: none;
   }
   .name-tag-smaller{
+    font-family: 'Comic Neue', cursive;
     display: inline-block;
   }
 }
@@ -420,3 +429,7 @@ input[type=submit]{
   padding: 20px;
   }
 }
+/*font-family: 'Great Vibes', cursive;
+font-family: 'Comic Neue', cursive;
+font-family: 'Montserrat', sans-serif;*/
+
