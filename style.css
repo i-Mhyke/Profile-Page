@@ -2,6 +2,8 @@ body, html {
   height: 100%;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: #0f1113;
+  color: #e2e3df;
 
  }
 .body-container{
@@ -23,6 +25,7 @@ h1, h2, h3, h4, h5, h6{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   color: white;
 }
 .navbar {
@@ -111,7 +114,7 @@ width: 100%;
 	display: block;
   margin-left: auto;
   margin-right: auto;
-	background-color: #ffffff;
+	background-color: #282923;
   word-wrap: break-word;
 	border: 1px solid rgba(0, 0, 0, 0.125);
 	border-radius: 5px;
@@ -136,21 +139,29 @@ width: 100%;
     margin-top: 0;
     padding: 5px 0;
 }
+.name-tag{
+    margin-bottom: 100px;
+    margin-top: 50px
+}
 .my-image{
-    border: 10px solid #eeeeee;
-    margin-top: 18px;
+    border: 2px solid #ff9122;
+    margin-top: 0px;
+    margin-bottom: 20px;
     border-radius: 50%;
-    width: 100%;
+    width: 50%;
     box-shadow: 2px 2px 6px #333;
+    filter:grayscale(100%) contrast(100%) brightness(70%);
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
 }
 .bio h2{
   color: #ff9122;
   text-align: center;
-  margin-bottom: 20px;
   font-size: 28px
 }
 .bio-title{
-  font-weight: normal;
+  color: #ff9122;
 }
 .bio-content{
   padding-left: 20px;
@@ -161,6 +172,15 @@ width: 100%;
 }
 .con{
   width: 60%;
+}
+.my-data{
+  padding: 5px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.bio hr{
+  margin-bottom: 10px;
+  margin-top: 10px
 }
 hr{
   margin-top: 30px;
@@ -173,7 +193,7 @@ input{
     box-sizing: border-box;
     border:none;
     border-radius: 5px;
-    background-color: #edf2f7;
+    background-color: #595b4f;
 }
 input:focus{
   outline: none;
@@ -185,7 +205,7 @@ textarea{
     box-sizing: border-box;
     border:none;
     border-radius: 5px;
-    background-color: #edf2f7;
+    background-color: #595b4f;
 }
 textarea:focus{
   outline: none;
@@ -221,8 +241,47 @@ input[type=submit]:focus{
 }
 .my-story{
   line-height: 2em;
-  color: #494949;
+  color: #bec0b8;
   font-size: 20px;
+}
+.fa{
+ padding: 10px;
+  font-size: 20px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0px 2px;
+  border-radius: 100%;
+  line-height: 20px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.fa:hover{
+  background-color: #ff9122;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-instagram {
+  background: #f09433; 
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  color: white;
+}
+.fa-github {
+  background: #222222;
+  color: white;
+}
+.name-tag-smaller{
+  display: none;
 }
 @media(min-width: 320px){
   .body-container{
@@ -252,7 +311,7 @@ input[type=submit]:focus{
     max-width: 1140px;
   }
 }
-@media (max-width: 768px){
+@media (max-width: 990px){
   .header{
     height: 50%;
   }
@@ -285,9 +344,9 @@ input[type=submit]:focus{
       margin-left: auto;
       margin-top: 0px;
       margin-bottom: 20px;
-      width: 50%;
+      width: 30%;
     }
-    .copy{
+    .copy, .social-icons{
       text-align: center;
     }
     .copy a{
@@ -319,13 +378,19 @@ input[type=submit]:focus{
       font-weight: bold;
       margin-top: 10px
     }
+    .my-data{
+  padding: 5px;
+  }
+  .name-tag{
+    display: none;
+  }
+  .name-tag-smaller{
+    display: inline-block;
+  }
 }
 @media (max-width: 575px){
   .header{
     height: 50%;
-  }
-  .my-image{
-    width: 100%;
   }
 .flex-center h3{
   font-weight: bold;
@@ -342,6 +407,17 @@ input[type=submit]{
   width: 100px;
   padding: 10px 10px;
   font-size: 13px;
-
 }
+ .my-image{
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: 0px;
+      margin-bottom: 20px;
+      width: 80%;
+    }
+    .my-data{
+  padding: 20px;
+}
+
 }
